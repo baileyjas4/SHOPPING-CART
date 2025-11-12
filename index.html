@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css" defer> 
   <script src="script.js"  defer></script>
-  <title>Dynamic Shopping Cart</title>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmZqapSOZpQ4puC3iMR_mOZVRp_m56gRIgQ&s">
+  <title>Dynamic Shopping Cart</title> 
 </head>
 <body>
+  <div class="hero">
+    <img class="hero-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmZqapSOZpQ4puC3iMR_mOZVRp_m56gRIgQ&s">
+  </div>
   <h1>Dynamic Shopping Cart</h1>
   <div id="product-container">
     <input type="text" id="product-name" placeholder="Product Name">
     <input type="number" id="product-price" placeholder="Product Price">
-    <button id="add-product">Add Product</button>
+    <button id="add-product" type="button" class="btn btn-warning">Add Product</button>
   </div>
   <ul id="cart"></ul>
   <h3>Total: $<span id="total-price">0</span></h3>

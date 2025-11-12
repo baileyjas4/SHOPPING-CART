@@ -30,3 +30,10 @@ body {
 .cart-item button {
   margin-left: 10px;
 }
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
