@@ -1,42 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">  <script src="./script.js" defer></script>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dynamic Shopping Cart</title>
 </head>
 <body>
-    <h1>SHOPPING LIST</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQotdcjpNlhOl6Tmy14L_pV-HxRyD-EhNboA&s">
-   
-   
-   
-    <label for="iteminput"> Shopping Item</label>
-    <input type="iteminput" type="text">
-    
-    <p>Down below add to cart</p>
-    
-    <ul>
-    <li>Eggs</li>
-    <li>Bread</li>
-    <li>Milk</li>
-    <li>Butter</li> 
-     </ul>
-<ul id="product-list">
-    <li data-id="1">Eggs <button class="add-to-cart">Add to Cart</button></li>
-    <li data-id="2"> Bread <button class="add-to-cart">Add to Cart</button></li>
-  </ul>
-  <ul id="list">
-    <li>EGGS <button class="remove">Remove</button></li>
-    <li>BREAD<button class="remove">Remove</button></li>
-    <li>MILK<button class="remove">Remove</button></li>
-  </ul>
-  <button id="add-product">Add New Product</button>
+  <h1>Dynamic Shopping Cart</h1>
+  <div id="product-container">
+    <input type="text" id="product-name" placeholder="Product Name">
+    <input type="number" id="product-price" placeholder="Product Price">
+    <button id="add-product">Add Product</button>
+  </div>
+  <ul id="cart"></ul>
+  <h3>Total: $<span id="total-price">0</span></h3>
  
-
+  <script src="script.js"></script>
 </body>
 </html>
-
