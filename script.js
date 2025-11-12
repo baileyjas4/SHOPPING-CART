@@ -25,6 +25,15 @@ addProductButton.addEventListener('click', () => {
     const productName = productNameInput.value.trim();
     const price = parseFloat(productPriceInput.value);
 
+    if(!name) {
+      alert('product name');
+      return;
+    }
+    if(isNaN(price) || price <= 0) {
+      alert('price');
+      return;
+    }
+
     const li = document.createElement('li');
 
     li.classList.add('cart-item');
@@ -35,9 +44,9 @@ addProductButton.addEventListener('click', () => {
         <span>${productName}</span>
         <span>$${price.toFixed(2)}</span>
         <input type="number" class="quantity" value="1" min="1">
-        <span class="item-total">${price.toFixed(2)}</span>
+        <span class="item-total">$${price.toFixed(2)}</span>
         <button class = "remove"> Remove </button>
-    `;
+    `
 
     //Event Listener
     li.querySelector('.remove').addEventListener('click', removeItem);
