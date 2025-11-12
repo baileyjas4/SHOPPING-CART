@@ -25,7 +25,7 @@ addProductButton.addEventListener('click', () => {
     const productName = productNameInput.value.trim();
     const price = parseFloat(productPriceInput.value);
 
-    if(!name) {
+    if(!productName) {
       alert('product name');
       return;
     }
